@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: simple-spring
+  datasource:
+    url: jdbc:postgresql://localhost:5432/liquibase_db?useTimezone=true&serverTimezone=America/Sao_Paulo
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: db/changelog/db.changelog.xml
